@@ -9,8 +9,8 @@ namespace Game
         public static void Init()
         {
             Debug.Log("HotfixLogic Init");
-            
-            GameLogic.Instance.Init();
+            ModuleManager.Instance.Init();
+            //GameLogic.Instance.Init();
         }
 
         public static void Update()

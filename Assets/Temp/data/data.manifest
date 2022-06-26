@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 3658470898
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: ui_panel_login
+      Dependencies: {}

@@ -1,23 +1,34 @@
-﻿using Core;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Game
-
+public sealed class GameLogic : ModuleBase
 {
-    public class GameLogic
-    {
-        public static GameLogic Instance = new GameLogic();
+    #region Instance
 
-        public void Init()
+    static GameLogic mInstance;
+    public static GameLogic Instance
+    {
+        get
         {
-            this.EnterScene();
+            if (mInstance == null)
+            {
+                mInstance = ModuleManager.Instance.Get<GameLogic>();
+            }
+
+            return mInstance;
         }
-        private void EnterScene()
-        {
-            //显示场景
-            Debug.Log("EnterScene--显示场景");
-            //GameObject rMapPrefab = ResourceMgr.Instance.GetSceneAssetCache<GameObject>("");
-            //GameObject rMap = GameObject.Instantiate(rMapPrefab);
-        }
+    }
+
+    #endregion
+    public override void Init()
+    {
+        this.EnterScene();
+    }
+    private void EnterScene()
+    {
+        //显示场景
+        Debug.Log("EnterScene--显示场景");
+        //SceneManager.ChangeScene("MainCity");
+
+
     }
 }

@@ -5,16 +5,11 @@ namespace HotFix_Project
 {
     public class GameLanch : MonoSingleton<GameLanch>
     {
-        private string mDllUrl = Application.streamingAssetsPath + "/Hotfix/HotFix_Project.dll";
+        private string mDllUrl = Application.streamingAssetsPath + "/HotFix_Project.dll";
 
-        private string mPdbUrl = Application.streamingAssetsPath + "/Hotfix/HotFix_Project.pdb";
+        private string mPdbUrl = Application.streamingAssetsPath + "/HotFix_Project.pdb";
         private void Awake()
         {
-            //初始化游戏框架
-
-            //资源管理器
-            this.gameObject.AddComponent<ResourceMgr>();
-
             //ILRuntime管理器
             this.gameObject.AddComponent<ILRuntimeManager>();
 

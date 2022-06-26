@@ -1,0 +1,6 @@
+{
+    "GameUI":
+    [
+        {"SceneName":"GameScene","Type":"GameScene","UILayer":"UI"},
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "GameScene":
+    [
+        {"UIGUID":"UILogin","UIType":"FullPage","UILayer":"UI"},
+    ]
+}

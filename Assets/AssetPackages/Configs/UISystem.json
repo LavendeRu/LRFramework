@@ -1,0 +1,6 @@
+{
+    "GameUI":
+    [
+        {"UIGUID":"UILogin","UIType":"FullPage"},
+    ]
+}

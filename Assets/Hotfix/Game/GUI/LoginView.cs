@@ -1,6 +1,4 @@
-﻿using Core.UI;
-
-namespace HotFix_Project.Hotfix
+﻿namespace HotFix_Project.Hotfix
 {
 
     public class LoginView : ViewBase
